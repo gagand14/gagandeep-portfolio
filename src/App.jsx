@@ -157,7 +157,7 @@ export default function Portfolio() {
               </motion.a>
 
               <motion.a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/gagandeep-gagandeep-650b90274"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -431,10 +431,10 @@ export default function Portfolio() {
             </div>
 
             <div className="flex items-center justify-center gap-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
+              <a href="https://github.com/gagand14" target="_blank" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
                 <Github size={24} className="text-white" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
+              <a href="https://linkedin.com/in/gagandeep-gagandeep-650b90274" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
                 <Linkedin size={24} className="text-white" />
               </a>
             </div>
