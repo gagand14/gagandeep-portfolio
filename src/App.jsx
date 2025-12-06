@@ -13,7 +13,10 @@ import {
   ExternalLink,
   Calendar,
   MapPin,
-  GraduationCap
+  GraduationCap,
+  Zap,
+  CheckCircle,
+  TrendingUp
 } from 'lucide-react';
 
 export default function Portfolio() {
@@ -337,6 +340,84 @@ export default function Portfolio() {
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* NEW: Utility Bill Automation Project */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0 }}
+                whileHover={{ y: -8 }}
+                className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden group md:col-span-2 lg:col-span-3"
+              >
+                <div className="h-2 bg-gradient-to-r from-emerald-600 to-teal-500" />
+                <div className="p-8">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <Zap size={24} className="text-emerald-600" />
+                        <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                          ⭐ FEATURED
+                        </span>
+                      </div>
+                      <h3 className="text-2xl font-bold mb-2 text-slate-900 dark:text-slate-100">Utility Bill Processing Automation</h3>
+                      <p className="text-slate-500 dark:text-slate-400 text-sm mb-4">Built for myHome Management Inc.</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                    End-to-end automation system that monitors Gmail for utility bills, extracts metadata using regex, 
+                    uploads to Dropbox with standardized naming, and logs transactions to Google Sheets with Slack alerts.
+                  </p>
+
+                  <div className="grid md:grid-cols-3 gap-4 mb-6">
+                    <div className="flex items-center gap-3 bg-slate-50 dark:bg-slate-700/50 p-4 rounded-xl">
+                      <CheckCircle className="text-emerald-600" size={20} />
+                      <div>
+                        <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">98%</div>
+                        <div className="text-xs text-slate-600 dark:text-slate-400">Error Reduction</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 bg-slate-50 dark:bg-slate-700/50 p-4 rounded-xl">
+                      <TrendingUp className="text-blue-600" size={20} />
+                      <div>
+                        <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">20hrs</div>
+                        <div className="text-xs text-slate-600 dark:text-slate-400">Saved Monthly</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 bg-slate-50 dark:bg-slate-700/50 p-4 rounded-xl">
+                      <Database className="text-purple-600" size={20} />
+                      <div>
+                        <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">7,200</div>
+                        <div className="text-xs text-slate-600 dark:text-slate-400">Bills/Month</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {['Google Apps Script', 'Gmail API', 'Dropbox API', 'Google Sheets', 'Slack Webhooks', 'Power Automate', 'Regex'].map(tag => (
+                      <span key={tag} className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-full text-xs font-medium">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3">
+                    <a 
+                      href="https://docs.google.com/spreadsheets/d/1p7FuZ6jMmLeWqyIzpMT_yiJy-mwO4p6B8y6Uv27NMCA/edit?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-500 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all"
+                    >
+                      View Live Demo <ExternalLink size={16} />
+                    </a>
+                    <button className="flex items-center gap-2 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+                      View Documentation
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Other Projects */}
               {[
                 {
                   title: 'Linux Server on OpenStack',
@@ -362,7 +443,7 @@ export default function Portfolio() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
+                  transition={{ delay: (i + 1) * 0.1 }}
                   whileHover={{ y: -8 }}
                   className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden group"
                 >
@@ -431,7 +512,7 @@ export default function Portfolio() {
             </div>
 
             <div className="flex items-center justify-center gap-4">
-              <a href="https://github.com/gagand14" target="_blank" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
+              <a href="https://github.com/gagand14" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
                 <Github size={24} className="text-white" />
               </a>
               <a href="https://linkedin.com/in/gagandeep-gagandeep-650b90274" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
