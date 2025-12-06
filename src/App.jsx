@@ -77,7 +77,7 @@ export default function Portfolio() {
             </div>
 
             <motion.a
-              href="./resume.pdf"
+              href="/resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-teal-500 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-lg shadow-blue-500/25"
@@ -502,7 +502,7 @@ export default function Portfolio() {
               </motion.a>
 
               <motion.a
-                href="./resume.pdf"
+                href="/resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center justify-center gap-3 bg-white text-slate-900 px-6 py-4 rounded-xl font-semibold shadow-xl"
               >
