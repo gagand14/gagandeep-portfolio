@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Monitoring System - Gagandeep Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #f8fafc, #dbeafe, #f8fafc);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <nav class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">
+                    GG
+                </a>
+                <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">
+                    ← Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <div class="mb-8">
+            <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-blue-600 bg-clip-text text-transparent">
+                Network Monitoring System
+            </h1>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Python</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">SNMP</span>
+                <span class="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-medium">Networking</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm font-medium">Monitoring</span>
+            </div>
+            <p class="text-xl text-slate-600 leading-relaxed">
+                A comprehensive network monitoring solution designed to track device health, bandwidth usage, and alert on critical issues in real-time.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">Project Overview</h2>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+                This project was developed to provide IT operations teams with real-time visibility into network infrastructure health. 
+                The system monitors multiple devices simultaneously, collecting metrics and generating alerts when thresholds are exceeded.
+            </p>
+            
+            <h3 class="text-xl font-semibold mb-3 text-slate-900">Key Features</h3>
+            <ul class="space-y-3 text-slate-600 mb-6">
+                <li class="flex gap-3">
+                    <span class="text-blue-600 mt-1">▸</span>
+                    <span>Real-time monitoring of network devices using SNMP protocol</span>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 mt-1">▸</span>
+                    <span>Automated alerting system with email notifications for critical events</span>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 mt-1">▸</span>
+                    <span>Dashboard interface displaying device status, CPU usage, and bandwidth metrics</span>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 mt-1">▸</span>
+                    <span>Historical data logging for trend analysis and capacity planning</span>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 mt-1">▸</span>
+                    <span>Support for multiple device types including routers, switches, and servers</span>
+                </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-3 text-slate-900">Technical Implementation</h3>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+                The system was built using Python with the PySNMP library for device communication. 
+                Data is stored in a SQLite database for efficient querying and historical analysis. 
+                The alert engine uses configurable thresholds and supports multiple notification channels.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-3 text-slate-900">Outcomes & Impact</h3>
+            <ul class="space-y-3 text-slate-600">
+                <li class="flex gap-3">
+                    <span class="text-teal-600 mt-1">✓</span>
+                    <span>Reduced network downtime by 35% through proactive monitoring</span>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-teal-600 mt-1">✓</span>
+                    <span>Improved incident response time by providing immediate visibility into issues</span>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-teal-600 mt-1">✓</span>
+                    <span>Enabled data-driven capacity planning through historical trend analysis</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-600 to-teal-500 rounded-2xl shadow-lg p-8 text-white">
+            <h3 class="text-2xl font-bold mb-4">Want to Learn More?</h3>
+            <p class="mb-6 text-blue-50">
+                Contact me to discuss this project in detail or explore similar monitoring solutions for your infrastructure.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                Get in Touch
+            </a>
+        </div>
+    </main>
+
+    <footer class="py-8 px-6 bg-slate-900 text-slate-400 text-center mt-12">
+        <p class="text-sm">
+            © 2024 Gagandeep Gagandeep • <a href="index.html" class="hover:text-blue-400">Back to Portfolio</a>
+        </p>
+    </footer>
+</body>
+</html>
