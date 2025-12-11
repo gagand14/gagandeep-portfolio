@@ -336,25 +336,42 @@ export default function Portfolio() {
               Featured Projects
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   title: 'Linux Server on OpenStack',
                   tags: ['IaaS', 'Linux', 'Apache'],
                   description: 'Provisioned and configured Linux VMs on OpenStack with custom storage, networking, and Apache deployment.',
-                  gradient: 'from-blue-600 to-cyan-500'
+                  gradient: 'from-blue-600 to-cyan-500',
+                  link: null
                 },
                 {
                   title: 'ESMT Automation Extension',
                   tags: ['Automation', 'Chrome Extension', 'JavaScript'],
                   description: 'Chrome extension paired with Power Automate to streamline vendor workflows and reduce manual data entry.',
-                  gradient: 'from-purple-600 to-pink-500'
+                  gradient: 'from-purple-600 to-pink-500',
+                  link: null
                 },
                 {
                   title: 'Power BI Dashboards',
                   tags: ['Power BI', 'Excel', 'Power Automate'],
                   description: 'Built automated reporting dashboards that improved SLA visibility and stakeholder decision-making.',
-                  gradient: 'from-teal-600 to-green-500'
+                  gradient: 'from-teal-600 to-green-500',
+                  link: null
+                },
+                {
+                  title: 'Network Monitoring System',
+                  tags: ['Python', 'SNMP', 'Networking', 'Monitoring'],
+                  description: 'Comprehensive network monitoring solution tracking device health, bandwidth usage, and alerting on critical issues.',
+                  gradient: 'from-indigo-600 to-blue-500',
+                  link: '/gagandeep-portfolio/project1.html'
+                },
+                {
+                  title: 'Inventory Management Tool',
+                  tags: ['Excel VBA', 'Power Automate', 'SQL'],
+                  description: 'Automated inventory tracking system that streamlines asset management and provides real-time visibility.',
+                  gradient: 'from-pink-600 to-purple-500',
+                  link: '/gagandeep-portfolio/project2.html'
                 }
               ].map((project, i) => (
                 <motion.div
